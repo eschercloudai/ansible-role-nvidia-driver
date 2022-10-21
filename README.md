@@ -71,6 +71,7 @@ Currently, this role supports the following Linux distributions:
 * NVIDIA DGX OS 5
 * Ubuntu 18.04 LTS
 * Ubuntu 20.04 LTS
+* Ubuntu 22.04 LTS
 * CentOS 7
 * Red Hat Enterprise Linux 7
 * CentOS 8
