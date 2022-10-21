@@ -76,3 +76,5 @@ Currently, this role supports the following Linux distributions:
 * Red Hat Enterprise Linux 7
 * CentOS 8
 * Red Hat Enterprise Linux 8
+* Rocky Linux 8
+* Rocky Linux 9

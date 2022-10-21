@@ -17,6 +17,10 @@
   include_tasks: install-redhat.yml
   when: ansible_os_family == 'RedHat'
 
+- name: rocky family install tasks
+  include_tasks: install-redhat.yml
+  when: ansible_os_family == 'Rocky'
+
 - name: create persistenced override dir
   file:
     path: /etc/systemd/system/nvidia-persistenced.service.d/
