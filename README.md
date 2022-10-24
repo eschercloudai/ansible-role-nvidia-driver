@@ -55,6 +55,14 @@ By default, the Canonical repositories will be used, and the driver installed wi
 | `nvidia_driver_ubuntu_cuda_package`           | `"cuda-drivers"`                                                                   | Package name to install from CUDA repo               |
 | `nvidia_driver_ubuntu_packages_suffix`        | `"-server"`                                                                        | The suffix added to the apt packages when installing |
 
+### Debian specific variables
+
+| Variable                                      | Default value                                                                      | Description                                          |
+|-----------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------|
+| `nvidia_driver_debian_cuda_repo_baseurl`      | `"http://developer.download.nvidia.com/compute/cuda/repos/{{ _ubuntu_repo_dir }}"` | Base URL to use for CUDA repo                        |
+| `nvidia_driver_debian_cuda_package`           | `"cuda-drivers"`                                                                   | Package name to install from CUDA repo               |
+| `nvidia_driver_debian_packages_suffix`        | `"-server"`                                                                        | The suffix added to the apt packages when installing |
+
 ## Example playbook
 
 ```
@@ -72,6 +80,8 @@ Currently, this role supports the following Linux distributions:
 * Ubuntu 18.04 LTS
 * Ubuntu 20.04 LTS
 * Ubuntu 22.04 LTS
+* Debian 10
+* Debian 11
 * CentOS 7
 * Red Hat Enterprise Linux 7
 * CentOS 8
